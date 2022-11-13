@@ -10,9 +10,12 @@ Sukuriamos 3 kolekcijos: *routes*, *couriers*, *shipments*.
 * **couriers** kolekcija saugo kurjerių duomenis;
 * **shipments** kolekcija saugo siuntų, siuntėjų, gavėjų ir adresų duomenis.
 
+Dokumentų pavyzdžiai saugomi JSON failuose `couriers`, `routes` ir `shipments` kataloguose.
+
 ### Užklausos
 
 1. Iš *shipments* kolekcijos nuskaitomi visų siuntų siuntėjų adresai
+
 Funkcija
 ```
 def findNames():
@@ -28,6 +31,7 @@ Rezultatas:
 {'miestas': 'Kaunas', 'gatvė': 'Vilniaus', 'namoNr': '47', 'butoNr': None}
 ```
 2. Randamas kiekvieno maršruto bendras siuntų svoris
+
 Funkcija
 ```
 def findShipmentWeight():
@@ -44,6 +48,7 @@ Rezultatas:
 {'_id': ObjectId('6370a77747c8161ffcbe4040'), 'bendras_svoris': 9.8}
 ```
 3. 2 užklausa atliekama su Map Reduce
+
 Funkcija
 ```
 def findShipmentWeightMapReduce():
