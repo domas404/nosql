@@ -43,6 +43,7 @@ Rezultatas:
 {'miestas': 'Vilnius', 'gatvė': 'Ukmergės', 'namoNr': '47', 'butoNr': None}
 {'miestas': 'Kaunas', 'gatvė': 'Vilniaus', 'namoNr': '47', 'butoNr': None}
 ```
+---
 2. Randamas kiekvieno maršruto bendras siuntų svoris
 
 Funkcija:
@@ -60,6 +61,7 @@ Rezultatas:
 {'_id': ObjectId('6370a77747c8161ffcbe403f'), 'bendras_svoris': 10.5}
 {'_id': ObjectId('6370a77747c8161ffcbe4040'), 'bendras_svoris': 9.8}
 ```
+---
 3. 2 užklausa atliekama su Map Reduce
 
 Funkcija:
