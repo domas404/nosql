@@ -26,7 +26,7 @@ Sukuriamos 3 kolekcijos: *routes*, *couriers*, *shipments*.
 Dokumentų pavyzdžiai saugomi JSON failuose `couriers`, `routes` ir `shipments` kataloguose.
 
 ## Užklausos
-
+---
 1. Iš *shipments* kolekcijos nuskaitomi visų siuntų siuntėjų adresai
 
 Funkcija:
