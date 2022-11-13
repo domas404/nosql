@@ -13,6 +13,13 @@ Sukuriamos 3 kolekcijos: *routes*, *couriers*, *shipments*.
 ### Užklausos
 
 1. Iš *shipments* kolekcijos nuskaitomi visų siuntų siuntėjų adresai
+Funkcija
+```
+def findNames():
+    for x in shipments.find():
+        print(x["siuntėjas"]["adresas"])
+```
+Rezultatas:
 ```
 {'miestas': 'Vilnius', 'gatvė': 'Didlaukio', 'namoNr': '47', 'butoNr': None}
 {'miestas': 'Vilnius', 'gatvė': 'Ateities', 'namoNr': '15', 'butoNr': None}
@@ -21,11 +28,40 @@ Sukuriamos 3 kolekcijos: *routes*, *couriers*, *shipments*.
 {'miestas': 'Kaunas', 'gatvė': 'Vilniaus', 'namoNr': '47', 'butoNr': None}
 ```
 2. Randamas kiekvieno maršruto bendras siuntų svoris
+Funkcija
+```
+def findShipmentWeight():
+    ships = shipments.aggregate([
+        { "$group":{ "_id":"$maršrutoID", "bendras_svoris":{"$sum":"$svoris"} } },
+        { "$sort":{ "bendras_svoris":-1 } }
+    ])
+    for x in ships:
+        print(x)
+```
+Rezultatas:
 ```
 {'_id': ObjectId('6370a77747c8161ffcbe403f'), 'bendras_svoris': 10.5}
 {'_id': ObjectId('6370a77747c8161ffcbe4040'), 'bendras_svoris': 9.8}
 ```
 3. 2 užklausa atliekama su Map Reduce
+Funkcija
+```
+def findShipmentWeightMapReduce():
+    map_func = Code('function() { emit( this["maršrutoID"], this["svoris"] ); }')
+    reduce_func = Code('function(key, values) { return Array.sum(values); }')
+
+    database.command(
+        'mapReduce',
+        'shipments',
+        map = map_func,
+        reduce = reduce_func,
+        out = "shipment_weight"
+    )
+
+    for x in database.shipment_weight.find():
+        print(x)
+```
+Rezultatas:
 ```
 {'_id': ObjectId('6370a77747c8161ffcbe403f'), 'value': 10.5}
 {'_id': ObjectId('6370a77747c8161ffcbe4040'), 'value': 9.8}
