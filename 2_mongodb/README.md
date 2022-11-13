@@ -15,6 +15,7 @@
 
 ## Duomenų bazės modelis
 Pasirinkta dalykinė sritis - kurjerių paslaugos. Duomenų bazę sudaro 6 esybės. Jose saugoma informacija ir tarpusavio sąryšis pateikiamas diagramoje.
+
 ![Duomenų bazės diagrama](db_diagrama.png)
 
 Sukuriamos 3 kolekcijos: *routes*, *couriers*, *shipments*.
@@ -28,7 +29,7 @@ Dokumentų pavyzdžiai saugomi JSON failuose `couriers`, `routes` ir `shipments`
 
 1. Iš *shipments* kolekcijos nuskaitomi visų siuntų siuntėjų adresai
 
-Funkcija
+Funkcija:
 ```
 def findNames():
     for x in shipments.find():
@@ -44,7 +45,7 @@ Rezultatas:
 ```
 2. Randamas kiekvieno maršruto bendras siuntų svoris
 
-Funkcija
+Funkcija:
 ```
 def findShipmentWeight():
     ships = shipments.aggregate([
@@ -61,7 +62,7 @@ Rezultatas:
 ```
 3. 2 užklausa atliekama su Map Reduce
 
-Funkcija
+Funkcija:
 ```
 def findShipmentWeightMapReduce():
     map_func = Code('function() { emit( this["maršrutoID"], this["svoris"] ); }')
