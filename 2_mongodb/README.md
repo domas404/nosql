@@ -1,8 +1,13 @@
 # MongoDB
 
+### Užduotis
+>Sumodeliuokite duomenų bazę tinkama dokumentų modeliui (modelį pateikite grafiniu formatu).  Parašykite programą, kuri atlieka operacijas pagal reikalavimus.
+
+>Dalykinėje srityje turi būti bent 3 esybės. Sumodeliuokite bent dvi atskirose kolekcijose, bent dvi esybės turinčios kompozicijos sąryšį turi būti modeliuojamos tame pačiame dokumente (angl. embedded).
+
 Kurjerių paslaugos.
 
-### Duomenų bazės struktūros diagrama
+## Duomenų bazės struktūros diagrama
 ![Duomenų bazės diagrama](db_diagrama.png)
 
 Sukuriamos 3 kolekcijos: *routes*, *couriers*, *shipments*.
@@ -12,7 +17,7 @@ Sukuriamos 3 kolekcijos: *routes*, *couriers*, *shipments*.
 
 Dokumentų pavyzdžiai saugomi JSON failuose `couriers`, `routes` ir `shipments` kataloguose.
 
-### Užklausos
+## Užklausos
 
 1. Iš *shipments* kolekcijos nuskaitomi visų siuntų siuntėjų adresai
 
