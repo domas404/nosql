@@ -1,0 +1,36 @@
+{
+    "siuntėjas":{
+        "vardas":null,
+        "pavardė":null,
+        "telNr":"867777777",
+        "adresas":{
+            "miestas":"Vilnius",
+            "gatvė":"Ateities",
+            "namoNr":"15",
+            "butoNr":null
+        },
+        "įmonėsPav":"Moki veži"
+    },
+    "gavėjas":{
+        "vardas":"Antanas",
+        "pavardė":"B",
+        "telNr":"866655666",
+        "adresas":{
+            "miestas":"Nemenčinė",
+            "gatvė":"Vilniaus",
+            "namoNr":"1",
+            "butoNr":"1"
+        },
+        "įmonėsPav":null
+    },
+    "maršrutoID":null,
+    "svoris":10,
+    "tūris":0.005,
+    "būsena":"perduota kurjeriui",
+    "pristatymoAdr":{
+        "miestas":"Nemenčinė",
+        "gatvė":"Vilniaus",
+        "namoNr":"1",
+        "butoNr":"1"
+    }
+}

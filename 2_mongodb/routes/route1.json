@@ -1,0 +1,18 @@
+{
+    "route":[
+        {
+            "miestas":"Vilnius",
+            "gatvės": [
+                "Ateities",
+                "Didlaukio"
+            ]
+        },
+        {
+            "miestas":"Nemenčinė",
+            "gatvės": [
+                "Vilniaus",
+                "Švenčionių"
+            ]
+        }
+    ]
+}

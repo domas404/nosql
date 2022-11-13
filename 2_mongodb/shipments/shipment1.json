@@ -1,0 +1,36 @@
+{
+    "siuntėjas":{
+        "vardas":"Irena",
+        "pavardė":"Irenaitė",
+        "telNr":"861234567",
+        "adresas":{
+            "miestas":"Vilnius",
+            "gatvė":"Didlaukio",
+            "namoNr":"47",
+            "butoNr":null
+        },
+        "įmonėsPav":null
+    },
+    "gavėjas":{
+        "vardas":"Jonas",
+        "pavardė":"Jonaitis",
+        "telNr":"867654321",
+        "adresas":{
+            "miestas":"Vilnius",
+            "gatvė":"Ateities",
+            "namoNr":"10",
+            "butoNr":null
+        },
+        "įmonėsPav":"Norfa"
+    },
+    "maršrutoID":null,
+    "svoris":0.5,
+    "tūris":0.0001,
+    "būsena":"terminale",
+    "pristatymoAdr":{
+        "miestas":"Vilnius",
+        "gatvė":"Ateities",
+        "namoNr":"10",
+        "butoNr":null
+    }
+}

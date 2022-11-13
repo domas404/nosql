@@ -1,0 +1,36 @@
+{
+    "siuntėjas":{
+        "vardas":null,
+        "pavardė":null,
+        "telNr":"860011011",
+        "adresas":{
+            "miestas":"Vilnius",
+            "gatvė":"Ukmergės",
+            "namoNr":"47",
+            "butoNr":null
+        },
+        "įmonėsPav":"Senukai"
+    },
+    "gavėjas":{
+        "vardas":"Janina",
+        "pavardė":"J",
+        "telNr":"861816186",
+        "adresas":{
+            "miestas":"Vilnius",
+            "gatvė":"S. Stanevičiaus",
+            "namoNr":"39",
+            "butoNr":"1"
+        },
+        "įmonėsPav":null
+    },
+    "maršrutoID":null,
+    "svoris":4.9,
+    "tūris":0.0009,
+    "būsena":"terminale",
+    "pristatymoAdr":{
+        "miestas":"Vilnius",
+        "gatvė":"S. Stanevičiaus",
+        "namoNr":"39",
+        "butoNr":"1"
+    }
+}

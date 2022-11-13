@@ -1,0 +1,36 @@
+{
+    "siuntėjas":{
+        "vardas":"Petras",
+        "pavardė":"Petrauskas",
+        "telNr":"864785213",
+        "adresas":{
+            "miestas":"Kaunas",
+            "gatvė":"Vilniaus",
+            "namoNr":"47",
+            "butoNr":null
+        },
+        "įmonėsPav":null
+    },
+    "gavėjas":{
+        "vardas":"Irena",
+        "pavardė":"Petrauskaitė",
+        "telNr":"861212123",
+        "adresas":{
+            "miestas":"Vilnius",
+            "gatvė":"S. Stanevičiaus",
+            "namoNr":"44",
+            "butoNr":"1"
+        },
+        "įmonėsPav":null
+    },
+    "maršrutoID":null,
+    "svoris":1.2,
+    "tūris":0.0002,
+    "būsena":"terminale",
+    "pristatymoAdr":{
+        "miestas":"Vilnius",
+        "gatvė":"S. Stanevičiaus",
+        "namoNr":"44",
+        "butoNr":"1"
+    }
+}

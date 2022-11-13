@@ -1,0 +1,11 @@
+{
+    "maršrutas":[
+        {
+            "miestas":"Vilnius",
+            "gatvės": [
+                "S. Stanevičiaus",
+                "Gelvonų"
+            ]
+        }
+    ]
+}

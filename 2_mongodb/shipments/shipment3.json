@@ -1,0 +1,36 @@
+{
+    "siuntėjas":{
+        "vardas":null,
+        "pavardė":null,
+        "telNr":"868584838",
+        "adresas":{
+            "miestas":"Vilnius",
+            "gatvė":"Geležinio Vilko",
+            "namoNr":"30",
+            "butoNr":null
+        },
+        "įmonėsPav":"Pigu.lt"
+    },
+    "gavėjas":{
+        "vardas":"Tadas",
+        "pavardė":"T",
+        "telNr":"861715157",
+        "adresas":{
+            "miestas":"Vilnius",
+            "gatvė":"Gelvonų",
+            "namoNr":"40",
+            "butoNr":"1"
+        },
+        "įmonėsPav":null
+    },
+    "maršrutoID":null,
+    "svoris":3.7,
+    "tūris":0.001,
+    "būsena":"perduota kurjeriui",
+    "pristatymoAdr":{
+        "miestas":"Vilnius",
+        "gatvė":"Gelvonų",
+        "namoNr":"40",
+        "butoNr":"1"
+    }
+}
