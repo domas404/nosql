@@ -1,13 +1,20 @@
 # MongoDB
 
-### Užduotis
+### Užduoties formuluotė
 >Sumodeliuokite duomenų bazę tinkama dokumentų modeliui (modelį pateikite grafiniu formatu).  Parašykite programą, kuri atlieka operacijas pagal reikalavimus.
 
 >Dalykinėje srityje turi būti bent 3 esybės. Sumodeliuokite bent dvi atskirose kolekcijose, bent dvi esybės turinčios kompozicijos sąryšį turi būti modeliuojamos tame pačiame dokumente (angl. embedded).
 
-Kurjerių paslaugos.
+>Parašykite užklausas:
 
-## Duomenų bazės struktūros diagrama
+>1) Įdėtinėms (angl. embedded) esybėms gauti (banko pavyzdžiu - visas, visų klientų sąskaitas).
+
+>2) Bent vieną agreguojančią užklausą (banko pavyzdžiu - visų klientų balansus)
+
+>3) Parašykite tą pačią agreguojančią užklausą (kaip ir #2 punkte) su map-reduce
+
+## Duomenų bazės modelis
+Pasirinkta dalykinė sritis - kurjerių paslaugos. Duomenų bazę sudaro 6 esybės. Jose saugoma informacija ir tarpusavio sąryšis pateikiamas diagramoje.
 ![Duomenų bazės diagrama](db_diagrama.png)
 
 Sukuriamos 3 kolekcijos: *routes*, *couriers*, *shipments*.
