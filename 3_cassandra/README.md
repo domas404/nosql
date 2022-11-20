@@ -18,7 +18,7 @@
 # Duomenų bazės modelis
 Pasirinkta dalykinė sritis - kurjerių paslaugos. Duomenų bazę sudaro 4 esybės: Siuntos, Asmenys, Adresasi ir Maršrutai. Sukuriamos 9 lentelės pagal potencialias užklausas.
 
-![Duomenų bazės diagrama]("cassandra database.png")
+![Duomenų bazės diagrama](cassandra_diagram.png_)
 
 ## Užklausos
 
