@@ -18,7 +18,7 @@
 # Duomenų bazės modelis
 Pasirinkta dalykinė sritis - kurjerių paslaugos. Duomenų bazę sudaro 4 esybės: Siuntos, Asmenys, Adresasi ir Maršrutai. Sukuriamos 9 lentelės pagal potencialias užklausas.
 
-![Duomenų bazės diagrama](cassandra_diagram.png_)
+![Duomenų bazės diagrama](cassandra_diagram_.png_)
 
 ## Užklausos
 
@@ -55,10 +55,10 @@ Row(senderid=1, shipmentid=2)
 Row(receiverid=2, shipmentid=1)
 ```
 7. Q7 - Rodyti siuntas pagal būseną.
-'''
+```
 Row(state='Perduota kurjeriui', shipmentid=2, addressid=3, receiverid=3, routeid=33, senderid=1, volume=0.009999999776482582, weight=10.0)
 Row(state='Perduota kurjeriui', shipmentid=3, addressid=5, receiverid=5, routeid=33, senderid=4, volume=0.0005000000237487257, weight=0.75)
-'''
+```
 8. Q8 - Rodyti pristatymo adresą.
 ```
 Row(addressid=5, building='1', city='Švenčionys', flat=None, routeid=33, street='Vilniaus')
