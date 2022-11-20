@@ -24,20 +24,32 @@ Pasirinkta dalykinė sritis - kurjerių paslaugos. Duomenų bazę sudaro 4 esyb�
 
 1. Q1 - Rodyti maršrutus pagal savivaldybę.
 ```
+SELECT * FROM routes_by_municipality WHERE municipality = 'Švenčionių r.';
+```
+```
 Row(municipality='Švenčionių r.', routeid=33)
 ```
 2. Q2 - Rodyti siuntas pagal maršruto numerį.
+```
+SELECT * FROM shipments_by_route WHERE routeID = 33;
+```
 ```
 Row(routeid=33, shipmentid=2, addressid=3, receiverid=3, senderid=1, state='Perduota kurjeriui', volume=0.009999999776482582, weight=10.0)
 Row(routeid=33, shipmentid=3, addressid=5, receiverid=5, senderid=4, state='Perduota kurjeriui', volume=0.0005000000237487257, weight=0.75)
 ```
 3. Q3 - Rodyti siuntos informaciją.
 ```
+SELECT * FROM shipments
+```
+```
 Row(shipmentid=1, addressid=1, receiverid=2, routeid=29, senderid=1, state='Terminale', volume=0.0010000000474974513, weight=4.5)
 Row(shipmentid=2, addressid=3, receiverid=3, routeid=33, senderid=1, state='Perduota kurjeriui', volume=0.009999999776482582, weight=10.0)
 Row(shipmentid=3, addressid=5, receiverid=5, routeid=33, senderid=4, state='Perduota kurjeriui', volume=0.0005000000237487257, weight=0.75)
 ```
 4. Q4 - Rodyti siuntėjo/gavėjo informaciją.
+```
+SELECT * FROM person
+```
 ```
 Row(personid=5, adresoid=5, companyname=None, lastname='Mykolaitis-Putinas', name='Vincas', phonenumber='863343433')
 Row(personid=1, adresoid=1, companyname='Pigu.lt', lastname=None, name=None, phonenumber='861122333')
@@ -47,23 +59,38 @@ Row(personid=3, adresoid=3, companyname=None, lastname='Donelaitis', name='Krist
 ```
 5. Q5 - Rodyti asmens išsiųstas siuntas.
 ```
+SELECT * FROM shipments_by_sender WHERE senderID = 1;
+```
+```
 Row(senderid=1, shipmentid=1)
 Row(senderid=1, shipmentid=2)
 ```
 6. Q6 - Rodyti asmens gautas siuntas.
 ```
+SELECT * FROM shipments_by_receiver WHERE receiverID = 2;
+```
+```
 Row(receiverid=2, shipmentid=1)
 ```
 7. Q7 - Rodyti siuntas pagal būseną.
+```
+SELECT * FROM shipments_by_state WHERE state = 'Perduota kurjeriui';
+```
 ```
 Row(state='Perduota kurjeriui', shipmentid=2, addressid=3, receiverid=3, routeid=33, senderid=1, volume=0.009999999776482582, weight=10.0)
 Row(state='Perduota kurjeriui', shipmentid=3, addressid=5, receiverid=5, routeid=33, senderid=4, volume=0.0005000000237487257, weight=0.75)
 ```
 8. Q8 - Rodyti pristatymo adresą.
 ```
+SELECT * FROM address WHERE addressID = 5;
+```
+```
 Row(addressid=5, building='1', city='Švenčionys', flat=None, routeid=33, street='Vilniaus')
 ```
 9. Q9 - Rodyti adresus pagal maršrutoID.
+```
+SELECT * FROM address_by_route WHERE routeID = 29;
+```
 ```
 Row(routeid=29, addressid=1, building='1', city='Vilnius', flat=None, street='Ukmergės')
 Row(routeid=29, addressid=4, building='2', city='Vilnius', flat=None, street='Ukmergės')
